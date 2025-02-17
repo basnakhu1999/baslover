@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valentine's Day</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Prompt', sans-serif;
+            background-color: #ffe0f0;
+            text-align: center;
+            color: #d63384;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 1200px;
+            margin: auto;
+            padding: 20px;
+        }
+        h1 {
+            font-size: 3rem;
+        }
+        .gallery {
+            display: flex;
+            overflow: hidden;
+            width: 100%;
+            position: relative;
+        }
+        .gallery img {
+            width: 100%;
+            max-height: 400px;
+            object-fit: cover;
+        }
+        .cake-section {
+            margin-top: 40px;
+        }
+        .cake {
+            width: 200px;
+            height: 250px;
+            background: pink;
+            border-radius: 10px;
+            position: relative;
+            display: inline-block;
+        }
+        .candle {
+            width: 10px;
+            height: 40px;
+            background: red;
+            position: absolute;
+            top: -30px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        .flame {
+            width: 15px;
+            height: 20px;
+            background: orange;
+            border-radius: 50%;
+            position: absolute;
+            top: -20px;
+            left: 50%;
+            transform: translateX(-50%);
+            animation: flicker 1s infinite alternate;
+        }
+        @keyframes flicker {
+            from { opacity: 1; transform: translateX(-50%) scale(1); }
+            to { opacity: 0.6; transform: translateX(-50%) scale(1.1); }
+        }
+        .wish-button {
+            margin-top: 20px;
+            padding: 10px 20px;
+            background: #d63384;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Happy Valentine's Day</h1>
+        
+        <!-- Gallery Section -->
+        <div class="gallery">
+            <img src="URL_IMAGE_1" alt="Valentine Image 1">
+            <img src="URL_IMAGE_2" alt="Valentine Image 2">
+            <img src="URL_IMAGE_3" alt="Valentine Image 3">
+            <img src="URL_IMAGE_4" alt="Valentine Image 4">
+            <img src="URL_IMAGE_5" alt="Valentine Image 5">
+            <img src="URL_IMAGE_6" alt="Valentine Image 6">
+            <img src="URL_IMAGE_7" alt="Valentine Image 7">
+            <img src="URL_IMAGE_8" alt="Valentine Image 8">
+            <img src="URL_IMAGE_9" alt="Valentine Image 9">
+        </div>
+        
+        <!-- Cake Section -->
+        <div class="cake-section">
+            <h2>เค้กวันเกิดสำหรับคุณ!</h2>
+            <div class="cake">
+                <div class="candle">
+                    <div class="flame"></div>
+                </div>
+            </div>
+            <button class="wish-button" onclick="makeWish()">กดเพื่ออวยพร</button>
+        </div>
+    </div>
+    
+    <script>
+        function makeWish() {
+            alert('ขอให้คุณมีความสุขในวันวาเลนไทน์! ❤️');
+        }
+    </script>
+</body>
+</html>
